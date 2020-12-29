@@ -35,14 +35,45 @@ body {
 
 /** Globales **/
 
-.contenedor {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 h2 {
     text-align: center;
     text-transform: uppercase;
+}
+
+
+/** Botones **/
+
+.boton {
+    cursor: pointer;
+    border: none;
+    display: block;
+    background-color: #c00170;
+    padding: 1rem 4rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: background-color .3s ease-in-out;
+    flex: 0 0 100%;
+}
+
+.boton:hover {
+    background-color: #550232;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+
+/** Utilidades **/
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
@@ -70,8 +101,6 @@ main ul {
 
 .lista-productos li {
     list-style: none;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
     padding: 2rem;
 }
 
@@ -95,4 +124,15 @@ main ul {
 .lista-productos li img:hover {
     border: 10px solid rgba(76, 75, 160, 1);
     cursor: pointer;
+}
+
+.lista-productos li p {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.precio {
+    font-size: 3.5rem;
+    color: #c00170;
 }
